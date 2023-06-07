@@ -1,0 +1,249 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding: 10px;
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+.logo {
+    margin-right: 20px;
+    margin-left: 10px;
+    transform: scale(1.1);
+}
+
+.navbar-text {
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 510;
+    font-size: 15px;
+    margin-right: 40px;
+}
+
+.dropdown-button {
+    z-index: 1;
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-right: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 510;
+}
+
+.dropdown-arrow {
+    z-index: 1;
+    margin-left: 1px;
+}
+
+.dropdown-content {
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    min-width: 160px;
+    padding: 10px;
+}
+
+.dropdown-content a {
+    z-index: 1;
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+    z-index: 1;
+    display: block;
+}
+
+.logo {
+    margin-right: px;
+    margin-top: 4px;
+}
+
+.button-3 {
+    appearance: none;
+    background-color: white;
+    border: none;
+    border-radius: 0;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 510;
+    font-size: 15px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: 8px;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.button-3:hover {
+    background-color: grey;
+    text-decoration: none;
+}
+
+.button-3:focus {
+    box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
+    outline: none;
+    text-decoration: none;
+}
+
+.button-3:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    cursor: default;
+    text-decoration: none;
+}
+
+.button-3:active {
+    background-color: black;
+    box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+    text-decoration: none;
+}
+
+.button-4 {
+    appearance: none;
+    background-color: black;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 7px;
+    box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+    box-sizing: border-box;
+    color: rgb(231, 231, 231);
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 510;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 6px 14px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.button-4:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+}
+
+.button-4:hover {
+    background-color: grey;
+}
+
+.button-4:focus {
+    box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
+    outline: none;
+}
+
+.button-4:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    cursor: default;
+}
+
+.button-4:active {
+    background-color: grey;
+    box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+}
+
+/* Mobile Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 2;
+    text-decoration: none;
+        color: black
+}
+
+
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 2px;
+    transition: 0.4s;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    transition: 0.4s;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.navbar-menu.open {
+    max-height: 300px;
+    /* Adjust the max height as needed */
+}
+
+@media only screen and (max-width: 768px) {
+
+    .navbar {
+        margin: 0px;
+    }
+    .navbar-text, 
+    .dropdown,
+    .button-3,
+    .button-4 {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        
+    }
+} .navbar-menu {
+     display: none;
+ }
+
+ .navbar-mobile {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .navbar-mobile-item {
+     margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+        font-weight: 510;
+        font-size: 15px;
+ }
+ 
+.dropdown-button{
+
+    margin-left: -10px;
+}
+ 

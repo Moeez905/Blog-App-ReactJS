@@ -1,0 +1,11 @@
+.card-deck {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 18rem;
+    margin-right: 105px;
+}
