@@ -1,16 +1,24 @@
+
+
 import React, {useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+
+
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Cards from './components/cards/Cards';
+
 import Login from "./components/login/Login";
 import Register from "./components/register/Register";  
 import Home from './components/pages/home/Home';
+/*import Cards from './components/cards/Cards';
+import { Link } from 'react-router-dom';
 import Post from './components/post/Post';
+import Details from './components/details/Details'; */
 import Footer from './components/footer/Footer';
+
 import TopBar from './components/TopBar/Navbar';
-import Details from './components/details/Details'; 
+
 import { Provider } from 'react-redux';
+
 import store from './store';
 
 
