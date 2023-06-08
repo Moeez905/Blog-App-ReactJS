@@ -1,5 +1,5 @@
 .container {
-    margin: 20px;
+    margin-right: 60px;
 }
 
 .card-right {
@@ -187,7 +187,7 @@ margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
+    width: 100%;
     margin-bottom: 80px;
     /* Place arrows on either edge */
     /* Add other styling for the pagination container if needed */
