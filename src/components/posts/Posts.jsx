@@ -6,10 +6,10 @@ import "./posts.css"
 import { useEffect } from 'react';
 export default function Posts() {
  const dispatch = useDispatch();
-  const data = useSelector((state) => state.blogPosts.data);
-
+  const data = useSelector((state) => state.blogPosts.posts);
+const trimmedData = data.slice(0,6)
   useEffect(() => {
-    dispatch(fetchPosts());
+    dispatch(fetchPosts()); // To get data from API
     console.log('I am executed')
   }, []);
 
@@ -20,12 +20,13 @@ export default function Posts() {
 
   return (
     <div className='posts'>
-<Post/>
-<Post/>
-<Post/>
-<Post/>
-<Post/>
-<Post/>
+      {
+        trimmedData.map((post) => {
+          return <Post post={post} />
+          
+        })
+      }
+{/* <Post/> */}
 
     </div>
   )

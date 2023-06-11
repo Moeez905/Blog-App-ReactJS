@@ -14,6 +14,7 @@ import { Link } from 'react-router-dom';
 import Post from './components/post/Post';
 import Details from './components/details/Details'; */
 import Footer from './components/footer/Footer';
+import Details from './components/details/Details';
 
 import TopBar from './components/TopBar/Navbar';
 
@@ -76,6 +77,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/details/:id" element={<Details />} />
+
         </Routes>
         
         <Footer />

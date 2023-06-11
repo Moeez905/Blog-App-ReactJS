@@ -1,16 +1,19 @@
 import "./details.css";
+import { useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
 
-import FooterComponent from '../footer/Footer';
-
-export default function Details() {
-  return (
-    <>
+ function Details( ){
+ const param = useParams()
  
-      <FooterComponent />
+ 
+console.log(param)
 
-      <div className="Details">
-        <p></p>
+  return (
+ 
+  <div >
+        This is {param.id} 
       </div>
-    </>
-  );
+      
+    );
 }
+export default Details;
