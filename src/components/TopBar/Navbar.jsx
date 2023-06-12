@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from "../logo.jpg"
 import Routes from "react-router-dom"
 import './Navbar.css';
+import Login from '../login/Login';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -93,9 +94,9 @@ export default function Navbar() {
             Pricing
           </div>
 
-          <Link to="/login" className="button-3" role="button">Log in</Link>
+          <Link to="/login" className="button-3" role="button"state= { Login }>Log in</Link>
 
-          <Link to="/register" className="navbar-mobile-item button-4" role="button">
+          <Link to={{ pathname: '/login', }}  className="navbar-mobile-item button-4" role="button">
             Sign up
           </Link>
           
