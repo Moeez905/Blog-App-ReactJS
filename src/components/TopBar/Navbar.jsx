@@ -94,9 +94,9 @@ export default function Navbar() {
             Pricing
           </div>
 
-          <Link to="/login" className="button-3" role="button"state= { Login }>Log in</Link>
+          <Link to={{ pathname: '/login', }} className="button-3" role="button"  state= { Login } >Log in</Link>
 
-          <Link to={{ pathname: '/login', }}  className="navbar-mobile-item button-4" role="button">
+          <Link to="/register" className="navbar-mobile-item button-4" role="button">
             Sign up
           </Link>
           
