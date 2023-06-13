@@ -23,8 +23,8 @@ function Details() {
 
   return (
     <div className="detailBox">
-      <h2 className="Tdetails">Details of: {post.title}</h2>
-      <p className="Bdetails">Body: {post.body}</p>
+      <h2 className="Tdetails">Details of : {post.title}</h2>
+      <p className="Bdetails"> {post.body}</p>
     </div>
   );
 }
