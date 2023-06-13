@@ -216,9 +216,7 @@
         margin: 0px;
     }
     .navbar-text, 
-    .dropdown,
-    .button-3,
-    .button-4 {
+    .dropdown {
         display: none;
     }
 

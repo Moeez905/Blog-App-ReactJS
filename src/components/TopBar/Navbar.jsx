@@ -53,16 +53,11 @@ export default function Navbar() {
 
         <div className="navbar-text">Pricing</div>
 
-              <Link to={{ pathname: "/login" }} className="button-3" role="button">
-          Log in
-        </Link>
-        <Link
-          to="/register"
-          className="navbar-mobile-item button-4"
-          role="button"
-        >
-          Sign up
-        </Link>
+          <Link to= "/login" className="button-3" role="button">  Log in  </Link>
+
+        <Link to="/register" className="navbar-mobile-item button-4" role="button" >Sign up</Link>
+
+      
         {/* <button className="button-3" role="button">
           Log in
         </button> */}
