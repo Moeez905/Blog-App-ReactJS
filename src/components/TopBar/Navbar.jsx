@@ -53,12 +53,22 @@ export default function Navbar() {
 
         <div className="navbar-text">Pricing</div>
 
-        <button className="button-3" role="button">
+              <Link to={{ pathname: "/login" }} className="button-3" role="button">
           Log in
-        </button>
-        <button className="button-4" role="button">
+        </Link>
+        <Link
+          to="/register"
+          className="navbar-mobile-item button-4"
+          role="button"
+        >
           Sign up
-        </button>
+        </Link>
+        {/* <button className="button-3" role="button">
+          Log in
+        </button> */}
+        {/* <button className="button-4" role="button">
+          Sign up
+        </button> */}
       </div>
 
       {isMobileMenuOpen && (
@@ -93,12 +103,15 @@ export default function Navbar() {
           <div className="navbar-mobile-item">
             Pricing
           </div>
+        {/* <Link to={{ pathname: '/login', }} className="button-3" role="button"  state= { Login } >Log in</Link> */}
 
-          <Link to={{ pathname: '/login', }} className="button-3" role="button"  state= { Login } >Log in</Link>
-
-          <Link to="/register" className="navbar-mobile-item button-4" role="button">
+          {/* <Link
+            to="/register"
+            className="navbar-mobile-item button-4"
+            role="button"
+          >
             Sign up
-          </Link>
+          </Link> */}
           
 
           
