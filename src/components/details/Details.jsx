@@ -13,10 +13,6 @@ function Details() {
   const posts = useSelector((state) => state.blogPosts.posts);
   const post = posts.find((post) => post.id === parseInt(id));
 
-  useEffect(() => {
-    dispatch(fetchPosts());
-  }, [dispatch]);
-
   if (!post) {
     return <div>Loading...</div>;
   }
