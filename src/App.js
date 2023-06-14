@@ -74,7 +74,9 @@ const App = () => {
         <TopBar />
 
         <Routes>
+
           <Route path="/" element={<Home />} />
+          <Route path="/details/:id" element={<Details />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/details/:id" element={<Details />} />

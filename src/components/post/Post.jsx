@@ -1,4 +1,6 @@
 import { useEffect } from "react"
+import { Link } from 'react-router-dom';
+
 import "./post.css"
 
 export default function Post(props) {
@@ -17,7 +19,9 @@ return (
             </div>
             <div class="card__body">
               <p className="HeaderDateBP">{props.post.title}</p>
-              <h4 class="cardtitle">{props.post.id} &nbsp;  &#x2197; </h4>
+             <Link to={`/details/${props.post.id}`}>
+  <h4 className="cardtitle">{props.post.id} &nbsp; &#x2197;</h4>
+</Link>
               <p className="cardteaser"></p> 
             </div>
             <div className="HeaderButtonsBP">

@@ -17,7 +17,7 @@ export default function Navbar() {
     <nav>
       <div className="navbar">
         <div className="logo">
-          <img src={logo} alt="Logo" />
+         <Link to= "/" >  <img src={logo} alt="Logo"  /> </Link>
         </div>
 
         <div className="hamburger" onClick={toggleMobileMenu}>
