@@ -1,7 +1,6 @@
 import "./details.css";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { fetchPosts } from "../../actions/blogPosts";
 
 function Details() {
   const { id } = useParams();
