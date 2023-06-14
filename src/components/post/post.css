@@ -38,9 +38,18 @@ img {
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
     white-space: nowrap;
-    
-    
+text-decoration-line: none !important;
+    color: black;
+        
+}
 
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: none;
 }
 
 .cardteaser{
