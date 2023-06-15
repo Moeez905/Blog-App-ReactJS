@@ -6,7 +6,7 @@ export const fetchPosts = () => async (dispatch) => {
     dispatch(fetchPostsStart());
     const response = await fetch('https://jsonplaceholder.typicode.com/posts');
     const data = await response.json();
-    const top5Posts = data.slice(0, 6); // Keep only the first 6 elements
+    const top5Posts = data.slice(0, 6); // Keep only the first 5 elements
 
     dispatch(fetchPostsSuccess(top5Posts));
   } catch (error) {
@@ -19,11 +19,11 @@ export const fetchComments = () => async (dispatch) => {
     dispatch(fetchCommentsStart());
     const response = await fetch('https://jsonplaceholder.typicode.com/comments');
     const data = await response.json();
-    const top5Comments = data.slice(0, 6); // Keep only the first 6 elements
 
-    dispatch(fetchCommentsSuccess(top5Comments));
+    dispatch(fetchCommentsSuccess(data));
   } catch (error) {
     dispatch(fetchCommentsFailure(error.message));
   }
 };
+
 
