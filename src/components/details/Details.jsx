@@ -35,8 +35,10 @@ const commentsOfThispost = comments.find((comments) => comments.postId === parse
     <div className="detailBox">
       <h2 className="Tdetails">Details of : {post.title}</h2>
       <p className="Bdetails"> {post.body}</p>
-      <h3> {comments.email} dd</h3>
-      
+     <h3> {commentsOfThispost.body} dd</h3>
+     <h3> {commentsOfThispost.email} dd</h3>
+
+
     </div>
     
   );
