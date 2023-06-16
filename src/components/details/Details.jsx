@@ -10,8 +10,8 @@ function Details() {
   const posts = useSelector((state) => state.blogPosts.posts);
   const post = posts.find((post) => post.id === parseInt(id));
 
-/* const comments = useSelector((state) => state.blogComments.comments);
-comments.find((comments) => commenst.id === parseInt(id)); */
+const comments = useSelector((state) => state.blogComments.comments);
+const commentsOfThispost = comments.find((comments) => comments.postId === parseInt(id)); 
 
 
 
@@ -21,15 +21,11 @@ comments.find((comments) => commenst.id === parseInt(id)); */
  const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchComments()); // To get data from API
-    console.log('I am executed too')
+   
   }, []);
 
-
-
-
-
-
-
+  useEffect(() => {
+    console.log(commentsOfThispost, "in details");},[comments]);
 
   if (!post) {
     return <div>Loading...</div>;
@@ -39,6 +35,7 @@ comments.find((comments) => commenst.id === parseInt(id)); */
     <div className="detailBox">
       <h2 className="Tdetails">Details of : {post.title}</h2>
       <p className="Bdetails"> {post.body}</p>
+      <h3> {comments.email} dd</h3>
       
     </div>
     
