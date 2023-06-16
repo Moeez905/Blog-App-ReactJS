@@ -35,8 +35,18 @@ const commentsOfThispost = comments.find((comments) => comments.postId === parse
     <div className="detailBox">
       <h2 className="Tdetails">Details of : {post.title}</h2>
       <p className="Bdetails"> {post.body}</p>
-     <h3> {commentsOfThispost.body} dd</h3>
-     <h3> {commentsOfThispost.email} dd</h3>
+     
+
+<div class="comment-card">
+  <div class="card-image">
+      <img src="https://picsum.photos/100" alt="Comment Picture"/>
+  </div>
+  <div class="card-content">
+    <h3 class="name">{commentsOfThispost.name}</h3>
+    <p class="email">{commentsOfThispost.email}</p>
+    <p class="body">{commentsOfThispost.body}</p>
+  </div>
+</div>
 
 
     </div>

@@ -13,4 +13,88 @@
     text-align: center;
     font-family: quicksand;
     word-wrap: break-word;
+    margin-bottom: 80px;
+}
+
+
+.comment-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.card-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+background: radial-gradient(circle at top left, #d444f8 15%, #9b5de5, #af1ce9);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.name,
+
+.email,
+.body {
+    text-align: center;
+}
+
+.name {
+    font-family: quicksand;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.email {
+    font-size: 16px;
+    color: #eeeeee;
+    margin-bottom: 10px;
+    
+}
+
+.body {
+    
+    font-size: 16px;
+    margin-top: 50px;
+        font-family: quicksand;
+}
+
+@media screen and (max-width: 600px) {
+    .comment-card {
+        padding: 10px;
+    }
+
+    .card-image img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .name {
+        font-size: 16px;
+    }
+
+    .email {
+        font-size: 14px;
+    }
+
+    .body {
+        font-size: 12px;
+    }
 }
