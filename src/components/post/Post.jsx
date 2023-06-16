@@ -15,7 +15,14 @@ return (
         <div class="col-lg-4 col-md-6">
           <div class="cardBP">
             <div class="card__header">
-              <img src="https://source.unsplash.com/600x400/?computer" alt="card__image" class="card__image" width="600"/>
+             <Link to={`/details/${props.post.id}`}>
+              <img
+                src="https://source.unsplash.com/600x400/?computer"
+                alt="card__image"
+                className="card__image"
+                width="600"
+              />
+            </Link>
             </div>
             <div class="card__body">
               <p className="HeaderDateBP">{props.post.title}</p>
