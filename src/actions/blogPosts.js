@@ -19,7 +19,7 @@ export const fetchComments = () => async (dispatch) => {
     dispatch(fetchCommentsStart());
     const response = await fetch('https://jsonplaceholder.typicode.com/comments');
     const data = await response.json();
-
+console.log (data, "comments");
     dispatch(fetchCommentsSuccess(data));
   } catch (error) {
     dispatch(fetchCommentsFailure(error.message));

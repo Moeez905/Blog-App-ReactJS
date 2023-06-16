@@ -10,10 +10,12 @@ function Details() {
   const posts = useSelector((state) => state.blogPosts.posts);
   const post = posts.find((post) => post.id === parseInt(id));
 
+/* const comments = useSelector((state) => state.blogComments.comments);
+comments.find((comments) => commenst.id === parseInt(id)); */
 
 
 
-  
+
 
 
  const dispatch = useDispatch();
@@ -37,6 +39,7 @@ function Details() {
     <div className="detailBox">
       <h2 className="Tdetails">Details of : {post.title}</h2>
       <p className="Bdetails"> {post.body}</p>
+      
     </div>
     
   );
